@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local user data 
+data/ 
+
+# python virtual environments
+.venv/
+venv
+
+# Pyhon chahe
+*.pyc
+
+# Private keys and secrets 
+*.pem
+*.key
