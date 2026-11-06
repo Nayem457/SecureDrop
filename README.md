@@ -1,4 +1,5 @@
 SecureDrop
+Binyam Menkr, Nathan Damtew, Delvin Quansah
 
 SecureDrop is a Python-based application for securely sharing files over a local network.
 
