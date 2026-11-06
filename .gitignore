@@ -232,3 +232,15 @@ venv
 # Private keys and secrets 
 *.pem
 *.key
+
+# Local account data
+users.json
+
+# User identities and private keys
+identities/
+
+# CA private key
+ca/ca_key.pem
+
+# Encrypted local contact data
+contacts_data/

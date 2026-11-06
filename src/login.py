@@ -3,6 +3,7 @@ import hmac  #allows comparison of hashes
 from getpass import getpass #to hide password input
 from Crypto.Protocol.KDF import scrypt
 from src.session import create_session, close_session
+from src.contacts import add_contact
 
 def login_user():
     email = input("Enter your email: ").strip().lower()
@@ -64,8 +65,15 @@ def start_shell(session):
             command = input(("secure_drop> ")).strip().lower()
 
             if command == "help":
-                print("Available commands: help, logout, whoami, logout")
+                print("Available commands:")
+                print("  add     - Add or update a contact")
+                print("  whoami  - Show logged-in user")
+                print("  help    - Show available commands")
+                print("  exit    - Exit SecureDrop")
             
+            elif command == "add":
+                add_contact(session)
+                
             elif command == "whoami":
                 print("Logged in as:", session.email)
             
